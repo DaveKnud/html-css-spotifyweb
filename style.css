@@ -8,7 +8,7 @@
 
 /* container */
 #container{
-    height:100vh;
+    height:calc(100vh - 100px);
     background-color: darkgoldenrod ;
     display: flex;
 }
@@ -19,6 +19,7 @@
     width: 230px;
     background-color: rgb(0, 0, 0);
     padding: 1.5%;
+    padding-bottom: 0;
     position: relative;
     font-size: small;
     display: flex;
@@ -41,6 +42,12 @@
 .nav-left div a{
     color:#6B6B6B;
     text-decoration: none;
+}
+
+.nav-left div a:hover,
+.nav-left ul li:hover
+{
+    color:white;
 }
 
 .nav-left ul{
@@ -170,6 +177,7 @@ i.fa-square-plus{
     width: calc(100% - 230px);
     position: fixed;
     z-index: 200;
+    top: 0;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -186,6 +194,11 @@ button{
     padding-right: 4%;
     margin-right: 2%;
     cursor: pointer;
+}
+
+button:hover{
+    height: 52px;
+    font-size: 90%;
 }
             /* END HEADER-MAIN */
 
@@ -206,10 +219,13 @@ button{
     position: relative;
 }
 
-
 .nav-center ul li a {
     color:#6B6B6B;
     text-decoration: none;
+}
+
+.nav-center ul li a:hover{
+color:white;
 }
 
 .nav-center hr{
@@ -233,10 +249,14 @@ button{
     display : block;}
 
     /* MAIN_CENTER */
-.row-container-main{
+.blocco{
     padding: 1%;
+}
+
+.row-container-main{
     display: flex;
     gap: 1.5%;
+    margin-bottom: 2%;
 }
 
 .col-container-main{
@@ -247,17 +267,22 @@ button{
 
 .col-container-main div img{
     max-width: 100%;
-    padding-bottom: 3%;
+    padding-bottom: 5px;
+    padding-top: 10px;
 }
+
 
 .main-container h3,
 .main-container h2
 {
     color:white;
+    padding-bottom: 5px;
+    padding-top: 10px;
 }
 
 .main-container h5{
     color:#6B6B6B;
+    padding-bottom: 10px;
 }
 
 .img-border-radius img{
@@ -270,9 +295,14 @@ footer{
     
     height: 100px;
     width: 100%;
-    background-color:rgb(192, 0, 0);
+    background-color:#282828;
     position: fixed;
     z-index: 250;
+    bottom: 0;
+}
+footer img{
+    max-width: 100%;
+    height: 100px;
 }
 
 
