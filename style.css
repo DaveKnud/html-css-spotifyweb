@@ -13,17 +13,24 @@
     display: flex;
 }
 
-/* NAV-LEFT */
+/* NAV-LEFT SM,MD,LG*/
 .nav-left{
     height: 100%;
     width: 15%;
     background-color: #157;
     padding: 1.5%;
+    position: relative;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
 }
 
 #logo{
     max-width: 80%;
     margin-bottom: 10%;
+    cursor: pointer;
 }
 
 .nav-left div i{
@@ -33,8 +40,19 @@
 }
 
 .nav-left div a{
-    color:white;
+    color:#6B6B6B;
     text-decoration: none;
+}
+
+.nav-left ul{
+    margin-top: 8%;
+}
+
+.playlist-name{
+    color:#6B6B6B;
+    list-style: none;
+    margin-bottom: 10%;
+    padding-right:8%;
 }
 
 i{
@@ -42,8 +60,85 @@ i{
     font-size: 150%;
 }
 
+i.fa-square-plus{
+    margin-top: 10%;
+    font-size: 200%;
+}
+
+.green-active{
+    display: none;
+    position: absolute;
+    height: 25px;
+    width: 5px;
+    background-color:greenyellow;
+    left: 0;
+}
+
+/* FOOTER-NAV-LEFT */
+.footer-nav-left div i{
+    padding-right: 3%;
+    font-size: 100%;
+}
+
+.footer-nav-left hr{
+        height: 0.5px;
+        background-color:#6B6B6B;
+        border: none;
+        margin-bottom: 5%;
+}
+
+.icon-user.fa-solid.fa-circle-user{
+       font-size: 200%;
+}
+
+
+.name-user{
+    color: white;
+    font-size: 110%;
+    
+}
+
+.nav-left-xs{
+    height: 100%;
+   width: 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color:black;
+}
+
+.icons-top div img{
+    max-width: 70%;
+}
+
+.icons-top div{
+    padding-bottom: 25%;
+    padding-left: 7%;
+}
+
+
+/* NAV-LEFT-XS */
+
+
+
+/* Provando a centrare il testo
+#create-playlist{
+   padding-bottom:10%;
+} */
+
+.nav-left h4{
+    color:white;
+}
+
+/* :ACTIVE EFFETCS */
+#home:active .green-active,
+#search:active .green-active,
+#library:active .green-active{
+    display : block;}
+
+
 .nav-left div a:active{
-    color: rgb(15, 58, 95);
+    color: rgb(255, 255, 255);
 }
 
 
