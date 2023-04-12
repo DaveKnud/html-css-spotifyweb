@@ -241,8 +241,7 @@ button{
 
 .col-container-main{
     width: calc((100% / 6) - 1.5%);
-    background-color:darkred;
-    border:1px solid white;
+   
     text-align: center;
 }
 
@@ -257,9 +256,13 @@ button{
     color:white;
 }
 
+.main-container h5{
+    color:#6B6B6B;
+}
 
-
-
+.img-border-radius img{
+    border-radius:50%;
+}
 
 
 /* Footer */
